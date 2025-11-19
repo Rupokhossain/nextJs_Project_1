@@ -1,0 +1,67 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "React Tutorial - Beginners for Skills Building",
+      "slug": "react-tutorial-beginners-skills-building",
+      "instructor": {
+        "name": "Kevin Perry",
+        "rating": 4.7,
+        "image": "/assets/images/course-author-1.png"
+      },
+      "price": 0,
+      "priceDisplay": "Free",
+      "lessons": 8,
+      "students": 50,
+      "views": 12000,
+      "level": "Beginner",
+      "category": "Web Development",
+      "tags": ["react", "frontend", "javascript"],
+      "description": "A beginner-friendly React course focused on building practical skills.",
+      "image": "/assets/images/course-img-1.png",
+      "createdAt": "2025-01-10T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Cultural Perspectives in Teaching and Learning Environments",
+      "slug": "cultural-perspectives-teaching-learning",
+      "instructor": {
+        "name": "Deniel Ross",
+        "rating": 4.7,
+        "image": "/assets/images/course-author-2.png"
+      },
+      "price": 0,
+      "priceDisplay": "Free",
+      "lessons": 8,
+      "students": 50,
+      "views": 12000,
+      "level": "Intermediate",
+      "category": "Education",
+      "tags": ["culture", "education", "pedagogy"],
+      "description": "Explore cultural perspectives that shape teaching and learning environments.",
+      "image": "/assets/images/course-img-2.png",
+      "createdAt": "2024-11-02T12:30:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Innovative Instructional Strategies for Enhancing Student Learning",
+      "slug": "innovative-instructional-strategies",
+      "instructor": {
+        "name": "Andrew Klip",
+        "rating": 4.7,
+        "image": "/assets/images/course-author-3.png"
+      },
+      "price": 0,
+      "priceDisplay": "Free",
+      "lessons": 8,
+      "students": 50,
+      "views": 12000,
+      "level": "Intermediate",
+      "category": "Education",
+      "tags": ["instruction", "teaching", "strategies"],
+      "description": "Practical strategies to improve student engagement and outcomes.",
+      "image": "/assets/images/course-img-3.png",
+      "createdAt": "2024-10-05T08:00:00Z"
+    }
+  ]
+}
