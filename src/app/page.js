@@ -4,6 +4,9 @@ import About from "./homeComponents/About";
 import Categorys from "./homeComponents/Categorys";
 import Choose from "./homeComponents/Choose";
 import FilterCourse from "./homeComponents/FilterCourse";
+import Counter from "./homeComponents/Counter";
+import Faq from "./homeComponents/Faq";
+import Instructor from "./homeComponents/Instructor";
 
 const page = async () => {
   // fetch courses
@@ -24,6 +27,9 @@ const page = async () => {
         courses={courses}
         topCategorys={topCategorys}
       ></FilterCourse>
+      <Counter></Counter>
+      <Faq></Faq>
+      <Instructor></Instructor>
     </div>
   );
 };
