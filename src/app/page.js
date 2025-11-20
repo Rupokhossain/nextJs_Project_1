@@ -1,20 +1,31 @@
-import React from 'react'
-import Hero from './homeComponents/Hero'
-import About from './homeComponents/About'
-import Categorys from './homeComponents/Categorys'
-import Course from './homeComponents/Course'
-import Choose from './homeComponents/Choose'
+import React from "react";
+import Hero from "./homeComponents/Hero";
+import About from "./homeComponents/About";
+import Categorys from "./homeComponents/Categorys";
+import Choose from "./homeComponents/Choose";
+import FilterCourse from "./homeComponents/FilterCourse";
 
-const page = () => {
+const page = async () => {
+  // fetch courses
+  const res = await fetch("http://localhost:5000/courses",  { cache: "no-store" });
+  const courses = await res.json();
+
+  // fetch top categories
+  const res2 = await fetch("http://localhost:5000/topCategories",  { cache: "no-store" });
+  const topCategorys = await res2.json();
+
   return (
     <div>
       <Hero></Hero>
       <About></About>
       <Categorys></Categorys>
       <Choose></Choose>
-      <Course></Course>
+      <FilterCourse
+        courses={courses}
+        topCategorys={topCategorys}
+      ></FilterCourse>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

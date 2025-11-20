@@ -1,2 +1,109 @@
 text-[#162726]
 text-[#07a698]
+
+
+    {
+      "id": 4,
+      "title": "Mastering JavaScript ES6+ Concepts",
+      "slug": "mastering-javascript-es6-concepts",
+      "instructor": {
+        "name": "Sophia Miller",
+        "rating": 4.8,
+        "image": "/assets/images/course-author-4.png"
+      },
+      "price": 59,
+      "priceDisplay": "$59.00",
+      "lessons": 12,
+      "students": 340,
+      "views": 18000,
+      "level": "Advanced",
+      "category": "Programming",
+      "tags": ["javascript", "es6", "advanced"],
+      "description": "Deep dive into modern JavaScript ES6+ features used in today's web development.",
+      "image": "/assets/images/course-img-4.png",
+      "createdAt": "2025-02-15T10:00:00Z"
+    },
+    {
+      "id": 5,
+      "title": "UI/UX Fundamentals — Design Better Interfaces",
+      "slug": "ui-ux-fundamentals-design-better-interfaces",
+      "instructor": {
+        "name": "Emma Watson",
+        "rating": 4.6,
+        "image": "/assets/images/course-author-5.png"
+      },
+      "price": 39,
+      "priceDisplay": "$39.00",
+      "lessons": 10,
+      "students": 210,
+      "views": 9500,
+      "level": "Beginner",
+      "category": "Design",
+      "tags": ["ui", "ux", "figma"],
+      "description": "Learn the core principles of UI/UX to design user-friendly and stunning interfaces.",
+      "image": "/assets/images/course-img-5.png",
+      "createdAt": "2025-01-20T14:00:00Z"
+    },
+    {
+      "id": 6,
+      "title": "Full-Stack Web Development With MERN",
+      "slug": "full-stack-web-development-mern",
+      "instructor": {
+        "name": "Michael Johnson",
+        "rating": 4.9,
+        "image": "/assets/images/course-author-6.png"
+      },
+      "price": 79,
+      "priceDisplay": "$79.00",
+      "lessons": 18,
+      "students": 500,
+      "views": 30000,
+      "level": "Advanced",
+      "category": "Web Development",
+      "tags": ["mern", "mongodb", "react", "node"],
+      "description": "Become a full-stack developer by mastering MongoDB, Express, React, and Node.js.",
+      "image": "/assets/images/course-img-6.png",
+      "createdAt": "2024-09-25T09:00:00Z"
+    },
+    {
+      "id": 7,
+      "title": "Digital Marketing Essentials for Beginners",
+      "slug": "digital-marketing-essentials-beginners",
+      "instructor": {
+        "name": "Olivia Carter",
+        "rating": 4.5,
+        "image": "/assets/images/course-author-7.png"
+      },
+      "price": 25,
+      "priceDisplay": "$25.00",
+      "lessons": 6,
+      "students": 150,
+      "views": 7000,
+      "level": "Beginner",
+      "category": "Marketing",
+      "tags": ["seo", "ads", "content"],
+      "description": "Learn SEO, social media marketing, and content strategies from scratch.",
+      "image": "/assets/images/course-img-7.png",
+      "createdAt": "2025-02-01T11:00:00Z"
+    },
+    {
+      "id": 8,
+      "title": "Data Analysis with Python and Pandas",
+      "slug": "data-analysis-python-pandas",
+      "instructor": {
+        "name": "Daniel Smith",
+        "rating": 4.8,
+        "image": "/assets/images/course-author-8.png"
+      },
+      "price": 45,
+      "priceDisplay": "$45.00",
+      "lessons": 14,
+      "students": 380,
+      "views": 22000,
+      "level": "Intermediate",
+      "category": "Data Science",
+      "tags": ["python", "pandas", "data-analysis"],
+      "description": "Analyze, clean, and visualize datasets using Python, Pandas, and NumPy.",
+      "image": "/assets/images/course-img-8.png",
+      "createdAt": "2024-08-10T07:00:00Z"
+    }

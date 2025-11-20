@@ -7,6 +7,8 @@ import c4 from "../../../src/assets/images/category-4.png";
 import Image from "next/image";
 
 const Categorys = () => {
+
+  
   return (
     <div className="py-24 bg-[#f2f4f7]">
       <div className="container mx-auto px-24">

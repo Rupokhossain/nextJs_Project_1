@@ -1,5 +1,5 @@
 {
-  "courses": [
+"courses": [
     {
       "id": 1,
       "title": "React Tutorial - Beginners for Skills Building",
@@ -63,5 +63,52 @@
       "image": "/assets/images/course-img-3.png",
       "createdAt": "2024-10-05T08:00:00Z"
     }
+
+  ],
+
+
+  "topCategories": [
+    {
+      "id": 1,
+      "name": "All Categories",
+      "slug": "all"
+    },
+    {
+      "id": 2,
+      "name": "Business",
+      "slug": "business"
+    },
+    {
+      "id": 3,
+      "name": "Development",
+      "slug": "development"
+    },
+    {
+      "id": 4,
+      "name": "Marketing",
+      "slug": "marketing"
+    },
+    {
+      "id": 5,
+      "name": "Finance",
+      "slug": "finance"
+    },
+    {
+      "id": 6,
+      "name": "Gaming",
+      "slug": "gaming"
+    },
+    {
+      "id": 7,
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "id": 8,
+      "name": "Data Science",
+      "slug": "data-science"
+    }
   ]
+
+
 }
