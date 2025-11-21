@@ -7,6 +7,8 @@ import FilterCourse from "./homeComponents/FilterCourse";
 import Counter from "./homeComponents/Counter";
 import Faq from "./homeComponents/Faq";
 import Instructor from "./homeComponents/Instructor";
+import Team from "./homeComponents/Team";
+import Content from "./homeComponents/Content";
 
 const page = async () => {
   // fetch courses
@@ -30,6 +32,8 @@ const page = async () => {
       <Counter></Counter>
       <Faq></Faq>
       <Instructor></Instructor>
+      <Team/>
+      <Content></Content>
     </div>
   );
 };
