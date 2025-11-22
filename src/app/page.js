@@ -9,6 +9,7 @@ import Faq from "./homeComponents/Faq";
 import Instructor from "./homeComponents/Instructor";
 import Team from "./homeComponents/Team";
 import Content from "./homeComponents/Content";
+import News from "./homeComponents/News";
 
 const page = async () => {
   // fetch courses
@@ -34,6 +35,7 @@ const page = async () => {
       <Instructor></Instructor>
       <Team/>
       <Content></Content>
+      <News></News>
     </div>
   );
 };
