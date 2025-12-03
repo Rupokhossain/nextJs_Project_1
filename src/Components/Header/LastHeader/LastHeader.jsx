@@ -15,11 +15,10 @@ const LastHeader = () => {
           </div>
           <div className="flex space-x-10">
             <Link href="/" className="text-[#162726] uppercase font-semibold hover:text-[#07a698] transition-all duration-300 cursor-pointer">Home</Link>
-            <Link href="/" className="text-[#162726] uppercase font-semibold hover:text-[#07a698] transition-all duration-300 cursor-pointer">Courses</Link>
-            <Link href="/" className="text-[#162726] uppercase font-semibold hover:text-[#07a698] transition-all duration-300 cursor-pointer">Shop</Link>
-            <Link href="/" className="text-[#162726] uppercase font-semibold hover:text-[#07a698] transition-all duration-300 cursor-pointer">Pages</Link>
-            <Link href="/" className="text-[#162726] uppercase font-semibold hover:text-[#07a698] transition-all duration-300 cursor-pointer">Blog</Link>
-            <Link href="/" className="text-[#162726] uppercase font-semibold hover:text-[#07a698] transition-all duration-300 cursor-pointer">Contact</Link>
+            <Link href="/course_page" className="text-[#162726] uppercase font-semibold hover:text-[#07a698] transition-all duration-300 cursor-pointer">Courses</Link>
+            <Link href="/shops" className="text-[#162726] uppercase font-semibold hover:text-[#07a698] transition-all duration-300 cursor-pointer">Shop</Link>
+            <Link href="/about" className="text-[#162726] uppercase font-semibold hover:text-[#07a698] transition-all duration-300 cursor-pointer">About Us</Link>
+            <Link href="/contact" className="text-[#162726] uppercase font-semibold hover:text-[#07a698] transition-all duration-300 cursor-pointer">Contact</Link>
           </div>
         </div>
       </div>

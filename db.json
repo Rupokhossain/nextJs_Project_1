@@ -108,6 +108,81 @@
       "name": "Data Science",
       "slug": "data-science"
     }
+  ],
+
+   "shops": [
+    {
+      "id": 1,
+      "name": "Andrew Collins",
+      "title": "The Creator Mindset",
+      "reviews": 15,
+      "oldPrice": 170.00,
+      "newPrice": 147.00,
+      "image": "https://html.rrdevs.net/edcare/assets/img/shop/shop-1.png"
+    },
+    {
+      "id": 2,
+      "name": "James Parker",
+      "title": "The Phoenix Encounter",
+      "reviews": 15,
+      "oldPrice": 330.00,
+      "newPrice": 277.00,
+      "image": "https://html.rrdevs.net/edcare/assets/img/shop/shop-2.png"
+    },
+    {
+      "id": 3,
+      "name": "Ethan Thompson",
+      "title": "The Untapped Force",
+      "reviews": 15,
+      "oldPrice": 250.00,
+      "newPrice": 157.00,
+      "image": "https://html.rrdevs.net/edcare/assets/img/shop/shop-3.png"
+    },
+    {
+      "id": 4,
+      "name": "William Bennett",
+      "title": "Own Your Authority",
+      "reviews": 15,
+      "oldPrice": 80.00,
+      "newPrice": 57.00,
+      "image": "https://html.rrdevs.net/edcare/assets/img/shop/shop-4.png"
+    },
+    {
+      "id": 5,
+      "name": "James Parker",
+      "title": "The Phoenix Encounter",
+      "reviews": 15,
+      "oldPrice": 330.00,
+      "newPrice": 277.00,
+      "image": "https://html.rrdevs.net/edcare/assets/img/shop/shop-5.png"
+    },
+    {
+      "id": 6,
+      "name": "Ethan Thompson",
+      "title": "The Untapped Force",
+      "reviews": 15,
+      "oldPrice": 250.00,
+      "newPrice": 157.00,
+      "image": "https://html.rrdevs.net/edcare/assets/img/shop/shop-6.png"
+    },
+    {
+      "id": 7,
+      "name": "William Bennett",
+      "title": "Own Your Authority",
+      "reviews": 15,
+      "oldPrice": 80.00,
+      "newPrice": 57.00,
+      "image": "https://html.rrdevs.net/edcare/assets/img/shop/shop-7.png"
+    },
+    {
+      "id": 8,
+      "name": "Andrew Collins",
+      "title": "The Creator Mindset",
+      "reviews": 15,
+      "oldPrice": 170.00,
+      "newPrice": 147.00,
+      "image": "https://html.rrdevs.net/edcare/assets/img/shop/shop-8.png"
+    }
   ]
 
 

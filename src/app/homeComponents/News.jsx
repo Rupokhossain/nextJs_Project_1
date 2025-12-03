@@ -26,7 +26,7 @@ const News = () => {
             ></div>
 
             {/* Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#020F21] to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-[#020F21] to-transparent"></div>
 
             {/* Text */}
             <div className="absolute bottom-[50px] left-[50px] z-10 pr-10">
@@ -61,7 +61,7 @@ const News = () => {
               bg-cover bg-center"
             ></div>
 
-            <div className="absolute inset-0 bg-gradient-to-t from-[#020F21] to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-[#020F21] to-transparent"></div>
 
             <div className="absolute bottom-[50px] left-[50px] z-10 pr-10">
               <span className="text-[#07a698] px-5 py-2 rounded-full bg-white uppercase font-semibold  ">
