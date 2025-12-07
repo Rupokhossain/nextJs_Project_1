@@ -12,27 +12,29 @@ const ContactSection = () => {
   const themeColor = "#00a090";
 
   return (
-    <div className="py-20 bg-gray-50 font-sans">
-      <div className="container mx-auto px-4 lg:px-20">
+    <div className="py-16 md:py-24 bg-gray-50 font-sans">
+      {/* Container Responsive Padding */}
+      <div className="container mx-auto px-4 md:px-12 lg:px-24">
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Main Grid: Mobile 1 column, Desktop 3 columns */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           
-          {/* left side */}
-          <div className="lg:col-span-2 bg-white border border-gray-200 rounded-lg p-8 shadow-sm">
+          {/* --- Left Side: Contact Form --- */}
+          <div className="lg:col-span-2 bg-white border border-gray-200 h-fit rounded-lg p-6 md:p-8 shadow-sm">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Leave A Reply</h3>
             <p className="text-gray-500 mb-8 text-sm">
               Fill-up The Form and Message us of your amazing question
             </p>
 
             <form className="space-y-6">
-              {/* Name and Email Row */}
+              {/* Name and Email Row: Mobile 1 col, Tablet 2 cols */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Name Input */}
                 <div className="relative">
                   <input
                     type="text"
                     placeholder="Your Name"
-                    className="w-full border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#00a090] text-gray-700"
+                    className="w-full border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#00a090] text-gray-700 placeholder-gray-400"
                   />
                   <FaUser className="absolute right-4 top-4 text-gray-400" />
                 </div>
@@ -42,7 +44,7 @@ const ContactSection = () => {
                   <input
                     type="email"
                     placeholder="Your Email"
-                    className="w-full border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#00a090] text-gray-700"
+                    className="w-full border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#00a090] text-gray-700 placeholder-gray-400"
                   />
                   <FaEnvelope className="absolute right-4 top-4 text-gray-400" />
                 </div>
@@ -56,7 +58,7 @@ const ContactSection = () => {
                   <option>Support</option>
                   <option>Feedback</option>
                 </select>
-                {/* Custom Arrow for Select */}
+                {/* Custom Arrow */}
                 <div className="absolute right-4 top-4 pointer-events-none text-gray-400 text-xs">
                   ▼
                 </div>
@@ -67,7 +69,7 @@ const ContactSection = () => {
                 <textarea
                   rows="5"
                   placeholder="Message"
-                  className="w-full border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#00a090] text-gray-700 resize-none"
+                  className="w-full border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#00a090] text-gray-700 resize-none placeholder-gray-400"
                 ></textarea>
                 <FaRegCommentDots className="absolute right-4 top-4 text-gray-400" />
               </div>
@@ -76,15 +78,15 @@ const ContactSection = () => {
               <button
                 type="submit"
                 style={{ backgroundColor: themeColor }}
-                className="w-full text-white font-bold py-3.5 cursor-pointer rounded transition hover:opacity-90"
+                className="w-full text-white font-bold py-3.5 cursor-pointer rounded transition hover:opacity-90 hover:shadow-md"
               >
                 Submit Message
               </button>
             </form>
           </div>
 
-          {/* right side */}
-          <div className="lg:col-span-1 bg-white border border-gray-200 rounded-lg p-8 shadow-sm h-fit">
+          {/* --- Right Side: Office Information --- */}
+          <div className="lg:col-span-1 bg-white border border-gray-200 rounded-lg p-6 md:p-8 shadow-sm h-fit">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Office Information</h3>
             <p className="text-gray-500 mb-8 text-sm leading-relaxed">
               Completely recapitalize 24/7 communities via standards compliant metrics whereas.
@@ -99,8 +101,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 text-sm mb-1">Phone Number & Email</h4>
-                  <p className="text-gray-500 text-sm">(+65) - 48596 - 5789</p>
-                  <p className="text-gray-500 text-sm">hello@edcare.com</p>
+                  <p className="text-gray-500 text-sm hover:text-[#00a090] transition cursor-pointer">(+65) - 48596 - 5789</p>
+                  <p className="text-gray-500 text-sm hover:text-[#00a090] transition cursor-pointer">hello@edcare.com</p>
                 </div>
               </div>
 

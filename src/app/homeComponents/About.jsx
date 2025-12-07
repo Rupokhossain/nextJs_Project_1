@@ -10,11 +10,15 @@ import SectionHeading from "@/Components/SectionHeading/SectionHeading";
 
 const About = () => {
   return (
-    <div className="py-24 ">
-      <div className="container mx-auto px-24">
-        <div className="grid grid-cols-12">
+    <div className="py-24">
+      {/* Container Padding Fixed for Mobile/Tablet */}
+      <div className="container mx-auto px-4 md:px-12 lg:px-24">
+        
+        {/* Grid System Updated for Responsive */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-0">
+          
           {/* left side */}
-          <div className="col-span-6 relative">
+          <div className="col-span-1 lg:col-span-6 relative">
             <div className="border-2 relative border-[#dde1e7] max-w-72 rounded-tr-[58px] rounded-bl-[58px] p-1.5">
               <Image
                 src={aboutImg}
@@ -29,7 +33,8 @@ const About = () => {
               </div>
             </div>
 
-            <div className="max-w-64 absolute bottom-0 right-24">
+            {/* Image 2 Position Fixed for Mobile */}
+            <div className="max-w-64 absolute bottom-0 right-0 hidden md:block lg:right-24">
               <Image
                 src={aboutImg1}
                 alt="about_img"
@@ -37,7 +42,8 @@ const About = () => {
               />
             </div>
 
-            <div className="bg-[#07a698] max-w-72 p-7 rounded-tr-[58px] rounded-bl-[58px] flex items-center gap-3 mt-3">
+            {/* Support Box */}
+            <div className="bg-[#07a698] max-w-72 p-7 rounded-tr-[58px] rounded-bl-[58px] flex items-center gap-3 mt-3 relative z-10">
               <div className="w-12 h-12 rounded-full text-[#07a698]  bg-white flex items-center justify-center ">
                 <FiPhoneCall />
               </div>
@@ -53,7 +59,7 @@ const About = () => {
           </div>
 
           {/* right side */}
-          <div className="col-span-6">
+          <div className="col-span-1 lg:col-span-6 mt-10 lg:mt-0">
             <div>
               <SectionHeading
                 heading={"Get More About Us"}
@@ -69,7 +75,8 @@ const About = () => {
                 low-risk high-yield metrics and plug-and-play potentialities.
               </p>
 
-              <div className="flex justify-between gap-3">
+              {/* Stats Section Responsive */}
+              <div className="flex flex-col sm:flex-row justify-between gap-5 sm:gap-3">
                 <div className="flex items-center gap-4">
                   <div className="border  border-[#E0E5EB] w-12 h-12 rounded-full flex items-center justify-center bg-white shadow-md">
                     <Image src={icon_1} alt="icon" className="p-2" />

@@ -5,65 +5,61 @@ import { IoSearchOutline } from "react-icons/io5";
 import { GoHeart } from "react-icons/go";
 import { IoCartOutline } from "react-icons/io5";
 
-const MidHeder = () => {
+const MidHeader = () => {
   return (
-    <div className="container mx-auto px-24 py-4">
-      <div className="flex items-center justify-between">
-        <div>
+    <div className="container mx-auto px-4 md:px-12 xl:px-24 py-5">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4 lg:gap-5">
+
+        {/* Logo */}
+        <div className="flex justify-center w-full md:w-auto shrink-0">
           <Image
             src="https://html.rrdevs.net/edcare/assets/img/logo/logo-1.png"
             alt="Logo"
-            width={150}
-            height={50}
+            width={200}
+            height={70}
           />
         </div>
 
-        <div className="flex bg-[#f2f4f7] items-center rounded-[100px] w-[500px] px-2 py-2">
-          <div className="flex items-center gap-2 text-[#162726] border-r border-r-gray-300 pr-5 pl-5">
+        {/* Search Bar */}
+        <div className="flex w-full md:flex-1 lg:flex-none lg:w-[500px] bg-[#f2f4f7] items-center rounded-[100px] px-2 py-2 md:ml-5 lg:ml-0">
+          
+          {/* Category hide only mobile */}
+          <div className="hidden md:flex items-center gap-2 text-[#162726] border-r border-gray-300 pr-5 pl-5">
             <BiCategory />
             <p>Categories</p>
           </div>
 
-          <div className="flex items-center justify-center pl-5 text-[#212529]">
-            <form action="">
-              <div className="join">
-                <div>
-                  <label className="">
-                    <input
-                      type="email"
-                      placeholder="Search Here . . ."
-                      required
-                      className="border-none focus-within:outline-none focus:outline-none shadow-none"
-                    />
-                  </label>
-                  <div className="validator-hint hidden">
-                    Enter valid email address
-                  </div>
-
-                  <button className="btn btn-md bg-[#07a698] text-center rounded-[100px] pb-2.5 ml-4 text-white px-6 py-2">
-                    <IoSearchOutline className="mt-0.5" />
-                    Search
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
+          <form className="flex flex-1 items-center justify-between px-3 gap-2">
+            <input
+              type="text"
+              placeholder="Search Here..."
+              className="flex-1 bg-transparent text-sm outline-none"
+            />
+            <button className="bg-[#07a698] rounded-[100px] text-white px-5 py-2.5 text-sm flex items-center gap-1">
+              <IoSearchOutline />
+              <span className="hidden md:block">Search</span>
+            </button>
+          </form>
         </div>
 
-        <div className="flex items-center gap-5">
-          <div className="w-12 h-12 border border-[#e0e5eb] flex items-center justify-center rounded-full text-[#6c706f]">
+        {/* Icons + Button */}
+
+        <div className="hidden xl:flex items-center justify-end gap-5">
+          <div className="w-12 h-12 border border-[#e0e5eb] flex items-center justify-center rounded-full text-[#6c706f] cursor-pointer hover:bg-gray-100 transition">
             <GoHeart />
           </div>
-          <div className="w-12 h-12 border border-[#e0e5eb] flex items-center justify-center rounded-full text-[#6c706f]">
+          <div className="w-12 h-12 border border-[#e0e5eb] flex items-center justify-center rounded-full text-[#6c706f] cursor-pointer hover:bg-gray-100 transition">
             <IoCartOutline />
           </div>
-          <div>
-            <a href="" className="bg-[#07a698] px-10 py-3 text-white font-bold rounded-full inline-flex items-center">Start Free Trial</a>
-          </div>
+
+          <a className="bg-[#07a698] px-10 py-3 text-white font-bold rounded-full cursor-pointer whitespace-nowrap">
+            Start Free Trial
+          </a>
         </div>
+
       </div>
     </div>
   );
 };
 
-export default MidHeder;
+export default MidHeader;

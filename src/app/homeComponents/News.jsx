@@ -5,48 +5,50 @@ import { CiFolderOn } from "react-icons/ci";
 
 const News = () => {
   return (
-    <div className="py-24 ">
-      <div className="container mx-auto px-24">
-        <div className="text-center mb-10">
+    <div className="py-16 md:py-24">
+      {/* Container Padding Responsive */}
+      <div className="container mx-auto px-4 md:px-12 lg:px-24">
+        <div className="text-center mb-10 md:mb-14">
           <SectionHeading
             heading={"News & Blogs"}
             subHeading={"Latest News Updates"}
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-6">
-          
+        {/* Grid: 1 Column on Mobile, 2 on Desktop */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* CARD 1 */}
-          <div className="relative w-full h-[454px] rounded-2xl overflow-hidden">
-
-            {/* Image */}
+          <div className="relative w-full h-[400px] md:h-[454px] rounded-2xl overflow-hidden group">
+            {/* Image with hover effect (Optional but looks good) */}
             <div
               className="absolute inset-0 bg-[url('https://html.rrdevs.net/edcare/assets/img/blog/post-1.jpg')]
-              bg-cover bg-center"
+              bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
             ></div>
 
-            {/* Gradient */}
-            <div className="absolute inset-0 bg-linear-to-t from-[#020F21] to-transparent"></div>
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-linear-to-t from-[#020F21] via-[#020f2180] to-transparent"></div>
 
-            {/* Text */}
-            <div className="absolute bottom-[50px] left-[50px] z-10 pr-10">
-              <span className="text-[#07a698] px-5 py-2 rounded-full bg-white uppercase font-semibold  ">
+            {/* Text Content */}
+            {/* Positioning adjusted for Mobile vs Desktop */}
+            <div className="absolute bottom-6 left-6 md:bottom-[50px] md:left-[50px] z-10 pr-6 md:pr-10">
+              <span className="text-[#07a698] px-4 py-1.5 md:px-5 md:py-2 rounded-full bg-white uppercase font-bold text-xs md:text-sm">
                 Learning
               </span>
 
-              <h3 className="text-2xl font-semibold text-white w-2/3 my-5">
+              {/* Title width responsive */}
+              <h3 className="text-xl md:text-2xl font-semibold text-white w-full md:w-2/3 my-4 md:my-5 leading-snug">
                 Repurpose mission critical action life items rather total
                 linkage suds
               </h3>
 
-              <div className="flex gap-4 text-white">
+              <div className="flex flex-wrap items-center gap-4 text-white text-sm md:text-base">
                 <div className="flex items-center gap-2">
-                  <IoTimeOutline />
+                  <IoTimeOutline className="text-lg" />
                   <span>August 15, 2025</span>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <CiFolderOn />
+                  <CiFolderOn className="text-lg" />
                   <span>Marketing</span>
                 </div>
               </div>
@@ -54,40 +56,37 @@ const News = () => {
           </div>
 
           {/* CARD 2 */}
-          <div className="relative w-full h-[454px] rounded-2xl overflow-hidden">
-
+          <div className="relative w-full h-[400px] md:h-[454px] rounded-2xl overflow-hidden group">
             <div
               className="absolute inset-0 bg-[url('https://html.rrdevs.net/edcare/assets/img/blog/post-2.png')]
-              bg-cover bg-center"
+              bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
             ></div>
 
-            <div className="absolute inset-0 bg-linear-to-t from-[#020F21] to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-[#020F21] via-[#020f2180] to-transparent"></div>
 
-            <div className="absolute bottom-[50px] left-[50px] z-10 pr-10">
-              <span className="text-[#07a698] px-5 py-2 rounded-full bg-white uppercase font-semibold  ">
+            <div className="absolute bottom-6 left-6 md:bottom-[50px] md:left-[50px] z-10 pr-6 md:pr-10">
+              <span className="text-[#07a698] px-4 py-1.5 md:px-5 md:py-2 rounded-full bg-white uppercase font-bold text-xs md:text-sm">
                 Learning
               </span>
 
-              <h3 className="text-2xl font-semibold text-white w-2/3 my-5">
+              <h3 className="text-xl md:text-2xl font-semibold text-white w-full md:w-2/3 my-4 md:my-5 leading-snug">
                 Repurpose mission critical action life items rather total
                 linkage suds
               </h3>
 
-              <div className="flex gap-4 text-white">
+              <div className="flex flex-wrap items-center gap-4 text-white text-sm md:text-base">
                 <div className="flex items-center gap-2">
-                  <IoTimeOutline className="text-md font-semibold"/>
+                  <IoTimeOutline className="text-lg font-semibold" />
                   <span>August 15, 2025</span>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <CiFolderOn className="text-md font-semibold"/>
+                  <CiFolderOn className="text-lg font-semibold" />
                   <span>Marketing</span>
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
     </div>

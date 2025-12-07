@@ -28,7 +28,7 @@ const page = async () => {
       <Choose></Choose>
       <FilterCourse
         courses={courses}
-        topCategorys={topCategorys}
+       topCategorys={topCategorys} 
       ></FilterCourse>
       <Counter></Counter>
       <Faq></Faq>

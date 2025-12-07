@@ -8,7 +8,6 @@ const FilterCourse = ({topCategorys, courses}) => {
     setId(id);
   };
 
-
   return (
     <div>
         <Course selectedId={id} handleClick={handleClick} courses={courses} topCategorys={topCategorys}></Course>
@@ -16,4 +15,4 @@ const FilterCourse = ({topCategorys, courses}) => {
   )
 }
 
-export default FilterCourse
+export default FilterCourse;
